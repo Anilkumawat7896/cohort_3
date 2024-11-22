@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./todo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo</h1>
+      <div>
+        <form action="#" class="form">
+          <label for="todo-input" class="input-label">Enter todo</label><br />
+          <input
+            type="text"
+            class="todo-input"
+            value=""
+            placeholder="Enter task"
+          /><br />
+          <button
+            type="submit"
+            class="submit-button"
+            onclick="createTodo() ; return false;"
+          >
+            Create Todo
+          </button>
+          <button
+            type="submit"
+            class="update-button"
+          >
+            Update Todo
+          </button>
+        </form>
+      </div>
+      <div class="todo-container">
+        <div class="todo-heading">
+          <h2>All Todos</h2>
+        </div>
+        <div class="todo-list"></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./todo.js"></script>
+</html>

@@ -1,0 +1,101 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  background-color: #333;
+  color: white;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.todo-container {
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.todos {
+  background-color: rgba(76, 164, 242, 0.759);
+  border-radius: 4px;
+  padding: 15px;
+  padding-left: 20px;
+  text-transform: capitalize;
+  width: 50%;
+  margin-bottom: 5px;
+  font-size: larger;
+  font-weight: 700;
+  display: flex; 
+  align-items: center;
+}
+
+.form {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 0, 0.556);
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  width: 50%;
+}
+
+.form > .input-label {
+  font-weight: 600;
+}
+
+.form > .todo-input {
+  width: 80%;
+  padding: 10px;
+  font-size: larger;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(238, 232, 225);
+}
+
+.form > .todo-input:focus {
+  border-color: blue;
+  outline: none;
+}
+.form > .submit-button {
+  padding: 10px;
+  width: 83%;
+  border: none;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+}
+.form > .update-button {
+  padding: 10px;
+  width: 83%;
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(110, 115, 6);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+.todo-text-content {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.delete-btn{
+    cursor: pointer;
+}
+.edit-btn{
+    cursor: pointer;
+}
