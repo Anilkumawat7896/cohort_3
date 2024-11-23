@@ -1,0 +1,203 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(6, 6, 6);
+  color: white;
+}
+
+.container > .navbar-container {
+  background-color: rgba(61, 6, 61, 0.628);
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.container > .navbar-container > .navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: larger;
+  font-weight: 500;
+}
+.container > .navbar-container > .navbar > .nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2vw;
+  list-style: none;
+}
+.container > .navbar-container > .navbar > .nav-links > .nav-link > .link {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  padding: 5vh 2vw 5vh 2vw;
+  margin: 7vh 8vw 7vh 8vw;
+  background-color: rgba(28, 27, 27, 0.539);
+  border-radius: 1vw;
+  height: 90vh;
+  display: flex;
+
+  align-items: start;
+}
+
+.content > .todos {
+  width: 50%;
+  padding: 1vh;
+  padding-left: 2vw;
+  background-color: rgb(53, 56, 59);
+  border-radius: 1vw;
+}
+
+.content > .todos > .heading {
+  font-size: xx-large;
+  margin-bottom: 2vh;
+  margin-left: 1vw;
+}
+.content > .todos > .todo-list > .todo {
+  margin-bottom: 1vh;
+  padding: 5px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+}
+.content > .todos > .todo-list > .todo > .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2vw;
+  gap: 2vw;
+  cursor: pointer;
+}
+
+.content > .todos > .todo-list > .todo > .todo-content {
+  margin-left: 1vw;
+}
+
+.content > .content-2 > .profile {
+  width: 100%;
+  padding: 1vh;
+  padding-left: 2vw;
+  background-color: rgb(53, 56, 59);
+  border-radius: 1vw;
+  margin-left: 1vw;
+  font-size: x-large;
+}
+.content > .content-2 > .profile > .wraper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.content > .content-2 > .profile > .user-msg {
+  margin-top: 1vh;
+  font-size: xx-large;
+}
+.content > .content-2 > .profile > .wraper > .user-details-lable {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.content > .content-2 > .profile > .wraper > .user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.content > .content-2 > .profile > .user-btn-wraper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content > .content-2 > .profile > .user-btn-wraper > .user-edit-btn {
+  padding: 0.25vw 6vw 0.25vw 6vw;
+  font-size: x-large;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(6, 115, 193);
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+.content > .content-2 > .profile > .user-btn-wraper > .user-edit-btn:hover {
+  background-color: rgb(3, 84, 141);
+}
+.content > .content-2 > .profile > .user-btn-wraper > .user-delete-btn {
+  padding: 0.25vw 6vw 0.25vw 6vw;
+  font-size: x-large;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(182, 4, 4);
+  border: none;
+  border-radius: 1vh;
+  cursor: pointer;
+}
+.content > .content-2 > .profile > .user-btn-wraper > .user-delete-btn:hover {
+  background-color: rgb(121, 2, 2);
+}
+.content > .content-2 > .forms {
+  padding: 1vh;
+  margin-left: 1vw;
+  width: 100%;
+  font-size: larger;
+  font-weight: 700;
+  margin-top: 1vh;
+  background-color: rgb(149, 149, 11);
+  border-radius: 1vw;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+.content > .content-2 > .forms > .todo-form-heading {
+  margin-left: 4vw;
+  font-size: xx-large;
+}
+.content > .content-2 > .forms > .todo-form > .form-input {
+  margin-left: 4vw;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+.content > .content-2 > .forms > .todo-form > .form-input > .todo-input-label {
+  font-size: larger;
+}
+.content > .content-2 > .forms > .todo-form > .form-input > .todo-input {
+  font-size: larger;
+  border: none;
+  height: 3vh;
+  border-radius: 5px;
+  padding: 8px;
+}
+.content > .content-2 > .forms > .todo-form > .form-input > .todo-input:focus {
+  outline: none;
+}
+
+.content > .content-2 > .forms > .todo-form > .todo-submit-btn {
+  margin-left: 4vw;
+  font-size: x-large;
+  border: none;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 2vw;
+  margin-top: 2vh;
+  background-color: rgb(6, 115, 193);
+  color: white;
+  cursor: pointer;
+}
+.content > .content-2 > .forms > .todo-form > .todo-submit-btn:hover {
+  background-color: rgb(3, 84, 141);
+}
+.dark-mode-icon{
+    padding: 9px;
+    border: solid white 1px;
+    border-radius: 50%;
+}
