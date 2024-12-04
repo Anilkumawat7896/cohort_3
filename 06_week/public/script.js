@@ -1,3 +1,7 @@
+window.onload = function () {
+  me();
+};
+
 async function signup() {
   const username = document.getElementById("username-signup").value;
   const password = document.getElementById("password-signup").value;
