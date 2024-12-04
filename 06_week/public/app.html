@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend for jwt authentication</title>
+  </head>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="./script.js"></script>
+
+  <body>
+    <div>
+      <section>
+        <label for="username">Username : </label>
+        <input
+          type="text"
+          id="username-signup"
+          placeholder="Entert username"
+          required
+        />
+        <label for="username">Password : </label>
+        <input
+          type="password"
+          id="password-signup"
+          placeholder="Entert password"
+          required
+        />
+        <button onclick="signup()">Sign up</button>
+      </section>
+      <section>
+        <label for="username">Username : </label>
+        <input
+          type="text"
+          id="username-signin"
+          placeholder="Entert username"
+          required
+        />
+        <label for="username">Password : </label>
+        <input
+          type="password"
+          id="password-signin"
+          placeholder="Entert password"
+          required
+        />
+        <button onclick="signin()">Sign in</button>
+      </section>
+      <section>
+        <div>
+          username : <span id="username"></span> password :
+          <span id="password"></span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
